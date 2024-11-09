@@ -1,11 +1,15 @@
 #include <stdio.h>
 
+int sum(int a, int b);
+
 int main(){
     int c = 0;
-    int a = 3;
-    int b = 4;
-
-    c = a+b;
-    printf("Hallo Umanskky 1987 c=%d" , c);
+    
+    c = sum(4, 3);
+    printf("Hallo Umanskky 1987 c = %d" , c);
 }
 
+int sum(int a, int b){
+    int c = a+b;
+    return c;
+}
